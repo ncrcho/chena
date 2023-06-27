@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website</title>
+<style>
+@font-face {
+  font-family: "Sora";
+  src: url("sora-font/Sora-Regular.ttf") format("truetype");
+  /* Add more font variations (e.g., bold, italic) if available */
+}
+
+/* Rest of your CSS code */
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  position: relative;
+  margin: 80px 0 80px 0;
+}
+
+.arrow {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+} 
+
+
+.left-arrow {
+  left:140px;
+}
+.left-arrow  img {
+  cursor: pointer;
+}
+.right-arrow {
+  right:140px;
+}
+.right-arrow  img {
+  cursor: pointer;
+}
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.review-container img {
+height: 38px;
+}
+/* .section-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-bottom: 20px;
+} */
+.section-icon img {
+transform: translateX(-50%);
+margin-top: -50px;
+}
+.customer-review {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.customer-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  background-color: #FFFDFB;
+  margin: 0;
+}
+
+header {
+  height: 140px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header img.logo {
+  margin-left:380px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 380px;
+}
+
+.social-icons img {
+  height: 19px;
+  margin-left: 18px;
+}
+
+.main-section {
+  background-color: #FFFDFB;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+  margin-top: 205px;
+  margin-bottom: 205px;
+}
+
+.content .left {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 380px;
+}
+
+.content .left h1 {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.content .left p {
+  font-size: 17px;
+  font-weight: lighter;
+  margin: 0;
+  margin-top: 8px;
+}
+
+/*.content .left button {
+  font-size: 20px;
+  border: 2px solid #000000;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #000000;
+  width: 200px;
+  height: 62px;
+}
+.content .left button:hover {
+  background-color: #000000;
+  color: white;
+  transition: 0.4s;
+}*/
+.content .right {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 380px;
+}
+
+.content .right img {
+  width: 280px;
+  height: 280px;
+}
+
+/*.grid-images {
+  background-color: #FFFDFB;
+  margin: 0 140px;
+  display: grid;
+  grid-template-columns: repeat(4, 377px);
+  grid-template-rows: repeat(4, 377px);
+  gap: 44px;
+  justify-content: center;
+  align-content: center;
+}*/
+
+.section-title {
+    color: #E8684D;
+    margin: 20px 140px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.grid-images {
+    background-color: #FFFDFB;
+    margin: 30px 140px 0 140px;
+    display: grid;
+    grid-template-columns: repeat(4, 377px);
+    grid-template-rows: repeat(4, 377px);
+    gap: 40px;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-images img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-images img:hover {
+  filter: grayscale(100%)
+}
+
+footer {
+  height: 100px;
+  background-color: #000000;
+  color: #fffdfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+footer span {
+  color: #fffdfb;
+}
+
+.pagination {
+  text-align: center;
+  margin: 40px 0;
+}
+.pagination a {
+    margin: 0 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.pagination a.current-page {
+    font-weight: bold;
+    color: #E8684D;
+}
+
+.contact-section {
+  display: flex;
+  background-color: #fffdfb;
+  height: 400px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.contact-half {
+  flex: 1;
+}
+
+.contact-left {
+  margin-left: 140px;
+  color: #000000;
+  margin-top: 70px;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.contact-text {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.contact-email {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.contact-right {
+  margin-right: 140px;
+}
+
+.contact-container {
+  display: grid;
+  margin-top: 80px;
+  grid-template-columns: 311px auto;
+  gap: 30px;
+  padding-bottom: 37px;
+}
+
+
+.contact-input {
+  width: 270px;
+  height: 54px;
+  background-color: #fffdfb;
+  border: 1.5px solid #000000;
+  color: #000000;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-button {
+  width: 311px;
+  height: 54px;
+  background-color: #000000;
+  border: 1.5px solid #000000;
+  color: #fffdfb;
+  font-size: 16px;
+  margin-top: -84px;
+}
+
+.contact-subject {
+  width: 520px;
+  height: 54px;
+  background-color: #fffdfb;
+  border: 1.5px solid #000000;
+  color: #000000;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-message {
+  width: 520px;
+  height: 98px;
+  background-color: #fffdfb;
+  border: 1.5px solid #000000;
+  color: #000000;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.title1 {
+  position: relative;
+}
+
+.title1::after {
+  content: "";
+  position: absolute;
+  bottom: 17px;
+  left: 358px;
+  width: calc(67.1vw - 20px);
+  height: 1.8px;
+  background-color: #000000;
+}
+
+.title2 {
+  position: relative;
+  padding-top: 80px;
+}
+
+.title2::after {
+  content: "";
+    position: absolute;
+    bottom: 19px;
+    left: -140px;
+    width: calc(4.8vw - 14px);
+    height: 1.8px;
+    background-color: #000000;
+}
+
+.title3 {
+  position: relative;
+}
+
+.title3::after {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  left: 286px;
+  width: calc(70.6vw - 20px);
+  height: 1.8px;
+  background-color: #000000;
+}
+
+
+/* .section-title {
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: calc(100vw - 20px);
+  height: 2px;
+  background-color: #000000;
+} */
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" class="logo">
+    <div class="social-icons">
+      <img src="Dribbble.png" alt="Social Icon 1">
+      <img src="Behance.png" alt="Social Icon 2">
+      <img src="Instagram.png" alt="Social Icon 3">
+    </div>
+  </header>
+  
+  <div class="main-section">
+    <div class="content">
+      <div class="left">
+        <h1 class="title">Brand and<br>Logo Design</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit<BR> voluptatem accusantium doloremque laudantium,<BR> to Duis aute irure dolor in reprehenderit voluptate<BR>  velit esse cillum dolore eu fugiat nulla pariatu.</p>
+        
+      </div>
+      <div class="right">
+        <img src="illustration.png" alt="Illustration">
+      </div>
+    </div>
+  </div>
+  
+  <h1 class="section-title title1">Creative Portfolio</h1>
+  <div class="grid-images">
+    <img src="1.png" alt="Image 1">
+    <img src="2.png" alt="Image 2">
+    <img src="3.png" alt="Image 3">
+    <img src="4.png" alt="Image 3">
+    <img src="5.png" alt="Image 3">
+    <img src="6.png" alt="Image 3">
+    <img src="7.png" alt="Image 3">
+    <img src="8.png" alt="Image 3">
+    <img src="9.png" alt="Image 3">
+    <img src="10.png" alt="Image 3">
+    <img src="11.png" alt="Image 3">
+    <img src="12.png" alt="Image 3">
+    <img src="13.png" alt="Image 3">
+    <img src="14.png" alt="Image 3">
+    <img src="15.png" alt="Image 3">
+    <img src="16.png" alt="Image 3">
+    <!-- Add more image tags as needed -->
+  </div>
+  
+  <div class="pagination">
+    <a href="#" onclick="changeGrid(1)">1</a>
+    <a href="#" onclick="changeGrid(2)">2</a>
+    <!-- Add more page links as needed -->
+    <!--<a href="#" onclick="changeGrid(3)">3</a>
+    <a href="#" onclick="changeGrid(4)">4</a>-->
+    <a href="#" class="next-link" onclick="goToNextPage()"><img src="next-icon.png" alt="Next"></a>
+  </div>
+  <h1 class="section-title title2">Client Testimonials</h1>
+  <div class="container">
+    <div class="arrow left-arrow" onclick="previousReview()">
+      <img src="left-arrow.svg" alt="" srcset="">
+
+    </div>
+    <div class="review-container">
+      <div> <img src="c:\Users\Chencr\Desktop\99.png" alt=""></div>
+      <div class="review-content">
+        <p class="customer-review"></p>
+        <p class="customer-name"></p>
+      </div>
+    </div>
+    <div class="arrow right-arrow" onclick="previousReview()">
+      <img src="right-arrow.svg" alt="" srcset="" color="red">
+    </div>
+   
+  </div>
+  <h1 class="section-title title3">Let's Connect</h1>
+  <div class="contact-section">
+    <div class="contact-half contact-left">
+      <h1 class="contact-title">Ready to team up?</h1>
+      <p class="contact-text">Find me on social, connect with me through this form, <br> or write directly Find me on social, connect with me <br> through this form, or write directly</p>
+      <p class="contact-email">contact@chena.design</p>
+    </div>
+    <div class="contact-half contact-right">
+      <div class="contact-container">
+        <input type="text" class="contact-input" placeholder="Name">
+        <input type="text" class="contact-subject" placeholder="Subject">
+        <input type="text" class="contact-input" placeholder="Email">
+        <textarea class="contact-message" placeholder="Message"></textarea>
+        <button class="contact-button">Submit</button>
+
+      </div>
+    </div>
+  </div>
+  
+
+  <footer>
+    <p>&#169; 2023 All rights reserved by Chena</p>
+  </footer>
+  
+  <script>
+    // JavaScript code to change the grid content
+    
+    // Get the grid element
+    const grid = document.querySelector('.grid-images');
+    
+    // Function to change the grid content based on page number
+    function changeGrid(pageNumber) {
+      // Remove all existing images from the grid
+      while (grid.firstChild) {
+        grid.removeChild(grid.firstChild);
+      }
+      
+      // Add new images to the grid based on the page number
+      for (let i = (pageNumber - 1) * 16 + 1; i <= pageNumber * 16; i++) {
+        const img = document.createElement('img');
+        img.src = i + '.png';
+        img.alt = 'Image ' + i;
+        grid.appendChild(img);
+      }
+    }
+
+    const paginationLinks = document.querySelectorAll('.pagination a');
+    let currentPage = 1; // Variable to track the current page
+
+    paginationLinks.forEach((link, index) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default link behavior
+
+        // Remove the "current-page" class from all links
+        paginationLinks.forEach(link => link.classList.remove('current-page'));
+
+        // Add the "current-page" class to the clicked link
+        link.classList.add('current-page');
+
+        // Change the grid content based on the clicked page number
+        currentPage = index + 1;
+        changeGrid(currentPage);
+      });
+    });
+
+    // Function to handle the "next" link click
+    function goToNextPage() {
+      if (currentPage < paginationLinks.length) {
+        const currentPageLink = paginationLinks[currentPage - 1];
+        const nextPageLink = paginationLinks[currentPage];
+
+        currentPageLink.classList.remove('current-page');
+        nextPageLink.classList.add('current-page');
+
+        currentPageLink.style.color = ''; // Remove inline color style
+        nextPageLink.style.color = '#E8684D'; // Set color for next page
+
+        currentPage++;
+        changeGrid(currentPage);
+      }
+    }
+    
+
+    // Attach event listener to the "next" link
+    const nextLink = document.querySelector('.pagination a.next-link');
+    nextLink.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent default link behavior
+      goToNextPage();
+    });
+
+    const reviews = [
+      {
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        name: "John Doe"
+      },
+      {
+        review: "Praesent eu enim nec quam sollicitudin placerat nec sit amet mi.",
+        name: "Jane Smith"
+      },
+      {
+        review: "Vivamus vitae finibus orci, vel maximus lorem.",
+        name: "David Johnson"
+      },
+      {
+        review: "Nulla vitae est euismod, ullamcorper lectus quis, feugiat quam.",
+        name: "Emily Davis"
+      }
+    ];
+
+    let currentReviewIndex = 0;
+
+    function showReview(index) {
+      const review = reviews[index];
+      const reviewElement = document.querySelector(".customer-review");
+      const nameElement = document.querySelector(".customer-name");
+      reviewElement.textContent = review.review;
+      nameElement.textContent = review.name;
+    }
+
+    function previousReview() {
+      currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
+      showReview(currentReviewIndex);
+    }
+
+    function nextReview() {
+      currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+      showReview(currentReviewIndex);
+    }
+
+    showReview(currentReviewIndex);
+
+    
+    var header = document.getElementById('main-header');
+var prevScrollPos = window.pageYOffset;
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  
+  if (prevScrollPos > currentScrollPos) {
+    // Scrolling up, show the header
+    header.classList.remove('hide-header');
+  } else {
+    // Scrolling down, hide the header
+    header.classList.add('hide-header');
+  }
+  
+  prevScrollPos = currentScrollPos;
+};
+  </script>
+</body>
+</html>
