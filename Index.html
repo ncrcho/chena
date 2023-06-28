@@ -446,7 +446,7 @@ footer span {
     <!-- Add more page links as needed -->
     <!--<a href="#" onclick="changeGrid(3)">3</a>
     <a href="#" onclick="changeGrid(4)">4</a>-->
-    <a href="#" class="next-link" onclick="goToNextPage()"><img src="next-icon.png" alt="Next"></a>
+    <a href="#" onclick="changeGrid(2)"><img src="next-icon.png" alt="Next"></a>
   </div>
   <h1 class="section-title title2">Client Testimonials</h1>
   <div class="container">
@@ -533,19 +533,20 @@ footer span {
 
     // Function to handle the "next" link click
     function goToNextPage() {
-      if (currentPage < paginationLinks.length) {
-        const currentPageLink = paginationLinks[currentPage - 1];
-        const nextPageLink = paginationLinks[currentPage];
+      changeGrid(2)
+      // if (currentPage < paginationLinks.length) {
+      //   const currentPageLink = paginationLinks[currentPage - 1];
+      //   const nextPageLink = paginationLinks[currentPage];
 
-        currentPageLink.classList.remove('current-page');
-        nextPageLink.classList.add('current-page');
+      //   currentPageLink.classList.remove('current-page');
+      //   nextPageLink.classList.add('current-page');
 
-        currentPageLink.style.color = ''; // Remove inline color style
-        nextPageLink.style.color = '#E8684D'; // Set color for next page
+      //   currentPageLink.style.color = ''; // Remove inline color style
+      //   nextPageLink.style.color = '#E8684D'; // Set color for next page
 
-        currentPage++;
-        changeGrid(currentPage);
-      }
+      //   currentPage++;
+      //   changeGrid(currentPage);
+      // }
     }
     
 
