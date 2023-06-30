@@ -1,6 +1,7 @@
 let currentPage = 1; // Define the initial current page
 
 // Function to generate the image elements for a specific page
+// Function to generate the image elements for a specific page
 function generateImageElements(images, page, imagesPerPage) {
   const gridImages = document.getElementById('gridImages');
   gridImages.innerHTML = ''; // Clear previous images
@@ -16,6 +17,16 @@ function generateImageElements(images, page, imagesPerPage) {
     image.alt = imageObj.alt;
     image.dataset.originalSrc = imageObj.src; // Store original source
     image.dataset.hoverSrc = imageObj.hoverSrc;
+    
+    // Add event listeners for hover functionality
+    image.addEventListener('mouseover', function() {
+      image.src = image.dataset.hoverSrc; // Change source on hover
+    });
+
+    image.addEventListener('mouseout', function() {
+      image.src = image.dataset.originalSrc; // Restore original source on mouseout
+    });
+
     gridImages.appendChild(image);
   }
 }
