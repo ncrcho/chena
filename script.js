@@ -12,7 +12,9 @@ function generateImageElements(images, page, imagesPerPage) {
 
   for (let i = 0; i < pageImages.length; i++) {
     const imageObj = pageImages[i];
-    const image = document.createElement('img');
+    const image = document.createElement('img');  //---------*******************************--
+    image.classList.add('portfolio-image');
+
     image.src = imageObj.src;
     image.alt = imageObj.alt;
     image.dataset.originalSrc = imageObj.src; // Store original source
@@ -28,67 +30,14 @@ function generateImageElements(images, page, imagesPerPage) {
     });
 
     gridImages.appendChild(image);
+
+
+
+    
   }
 }
 
-// Generate the pagination buttons
-// function generatePagination(images, imagesPerPage) {
-//   const totalPages = Math.ceil(images.length / imagesPerPage);
-//   const pagination = document.getElementById('pagination');
-//   pagination.innerHTML = ''; // Clear previous pagination
 
-//   // Previous button
-//   const previousButton = document.createElement('button');
-//   previousButton.innerHTML = '<img src="./icon_preview.svg" alt="Previous">';
-//   previousButton.classList.add('page-link', 'previous-button');
-//   previousButton.disabled = currentPage === 1;
-//   previousButton.addEventListener('click', function () {
-//     currentPage--; // Update current page
-//     generatePagination(images, imagesPerPage);
-//     generateImageElements(images, currentPage, imagesPerPage);
-//   });
-//   pagination.appendChild(previousButton);
-
-//   for (let i = 1; i <= totalPages; i++) {
-//     const button = document.createElement('button');
-//     button.textContent = i;
-//     button.classList.add('page-link');
-//     button.classList.toggle('active', i === currentPage);
-//     button.addEventListener('click', function () {
-//       currentPage = i; // Update current page
-//       generatePagination(images, imagesPerPage);
-//       generateImageElements(images, currentPage, imagesPerPage);
-//     });
-//     pagination.appendChild(button);
-//   }
-
-//   // Next button
-//   const nextButton = document.createElement('button');
-//   nextButton.innerHTML = '<img src="./icon_next.svg" alt="Next">';
-//   nextButton.classList.add('page-link', 'next-button');
-//   nextButton.disabled = currentPage === totalPages;
-//   nextButton.addEventListener('click', function () {
-//     currentPage++; // Update current page
-//     generatePagination(images, imagesPerPage);
-//     generateImageElements(images, currentPage, imagesPerPage);
-//   });
-//   pagination.appendChild(nextButton);
-
-//   // Hide previous button on first page
-//   if (currentPage === 1) {
-//     previousButton.classList.add('hide');
-//   }
-
-//   // Hide next button on last page
-//   if (currentPage === totalPages) {
-//     nextButton.classList.add('hide');
-//   }
-// }
-
-
-// Generate the pagination buttons
-// Generate the pagination buttons
-// Generate the pagination buttons
 function generatePagination(images, imagesPerPage) {
   const totalPages = Math.ceil(images.length / imagesPerPage);
   const pagination = document.getElementById('pagination');
@@ -113,7 +62,7 @@ function generatePagination(images, imagesPerPage) {
     if (i === currentPage) {
       button.classList.add('active'); // Add 'active' class to current page button
       button.style.fontWeight = 'bold'; // Apply bold font style to current page button
-      button.style.color = 'orange'; // Apply orange color to current page button
+      button.style.color = '#E8684D'; // Apply orange color to current page button
     }
     button.addEventListener('click', function () {
       currentPage = i; // Update current page

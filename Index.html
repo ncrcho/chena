@@ -10,6 +10,7 @@
     #illustration {
       width: 500px;
       height: 500px;
+      margin-top: 450px;
     }
   </style>
 
@@ -133,6 +134,7 @@ header img.logo {
   padding: 20px;
   margin-top: 205px;
   margin-bottom: 205px;
+  height: 420px;
 }
 
 .content .left {
@@ -142,6 +144,7 @@ header img.logo {
   justify-content: center;
   align-items: flex-start;
   margin-left: 380px;
+  margin-top: 120px;
 }
 
 .content .left h1 {
@@ -221,9 +224,9 @@ header img.logo {
   height: auto;
 }
 
-.grid-images img:hover {
+/* .grid-images img:hover {
   filter: grayscale(100%)
-}
+} */
 
 footer {
   height: 100px;
@@ -404,20 +407,32 @@ footer span {
 }
 
 .page-link {
-  font-size: 22px;
+  font-family: sora;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
 }
 .page-link img {
-  width: 50px; /* Adjust the desired width */
-  /* height: 16px; Adjust the desired height */
-  /* display: flex;
-  align-items: center; */
+  width: 70px; /* Adjust the desired width */
+  height: 16px; Adjust the desired height
+  display: flex;
+  align-items: center;
 }
 
-.page-link{
+.page-link {
   background: none;
   border: none;
 }
 
+
+.portfolio-image {
+  transition: transform 0.6s ease;
+}
+
+.portfolio-image:hover {
+  transform:scale(1.02, 1.02)
+   /**********----------*******/
+}
 /* .section-title {
   position: relative;
 }
@@ -488,9 +503,15 @@ footer span {
     <!-- <script src="Index.js"></script> -->
     <img src="logo.png" alt="Logo" class="logo">
     <div class="social-icons">
-      <img src="Dribbble.png" alt="Social Icon 1">
-      <img src="Behance.png" alt="Social Icon 2">
-      <img src="Instagram.png" alt="Social Icon 3">
+      <a href="https://dribbble.com" target="_blank">
+        <img src="Dribbble.png" alt="Social Icon 1">
+      </a>
+      <a href="https://dribbble.com" target="_blank">
+        <img src="Instagram.png" alt="Social Icon 3">
+      </a>
+      <a href="https://dribbble.com" target="_blank">
+        <img src="Behance.png" alt="Social Icon 2">
+      </a>
     </div>
   </header>
 
@@ -587,6 +608,10 @@ footer span {
     .fade-in.active {
       opacity: 1;
     }
+
+    .customer-review {
+      width: 700px;
+    }
   </style>
   
   <h1 class="section-title title2">Client Testimonials</h1>
@@ -596,7 +621,7 @@ footer span {
     </div>
     <div class="review-container" ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
       <div>
-        <img src="c:\Users\Chencr\Desktop\99.png" alt="">
+        <img src="./99.svg" alt="">
       </div>
       <div class="review-content">
         <p class="customer-review fade-in"></p>
@@ -611,7 +636,7 @@ footer span {
   <script>
     const reviews = [
       {
-        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        review: "Chaima hat wiede Illustrationen gezeichnet sondern auch noch allen die er bereits früher gemacht hatte einen Refresh gegeben. Ursprünglich wollte ich das er zusätzlich noch einen oder zwei Tamplates für eine Instastory kreiert. Er hat aber für jedes Thema zwei erstellt und die sehen richtig toll aus. Er versteht sehr schnell was man von ihm will und reagiert ebenfalls schnell auf Nachrichten. Ich kann die Zusammenarbeit mit Chaima nur empfehlen..",
         name: "John Doe"
       },
       {
