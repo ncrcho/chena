@@ -1,8 +1,22 @@
+
+
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
+
+    // Validate the form fields
+    if (empty($name) || empty($email) || empty($message)) {
+        echo 'error';
+        return;
+    }
+
+    // Validate email format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo 'error';
+        return;
+    }
 
     // Send email
     $to = "ncrcho@gmail.com";
@@ -12,10 +26,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "Message: " . $message;
     $headers = "From: " . $email;
 
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Thank you for contacting us! We will get back to you shortly.";
-    } else {
-        echo "Oops! Something went wrong. Please try again.";
-    }
+
+    mail($to, $subject, $body, $headers);
+
+    // if (mail($to, $subject, $body, $headers)) {
+    //     echo "success";
+    // } else {
+    //     echo "error";
+    // }
 }
 ?>
+

@@ -708,6 +708,23 @@ footer span {
           var email = $('.contact-input[name="email"]').val();
           var message = $('.contact-message').val();
           
+          // Validate the form fields
+          if (name === '' || subject === '' || email === '' || message === '') {
+            alert('Please fill in all the required fields.');
+            // Enable the submit button
+            $('.contact-button').prop('disabled', false);
+            return;
+          }
+    
+          // Validate the email format
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!email.match(emailRegex)) {
+            alert('Please enter a valid email address.');
+            // Enable the submit button
+            $('.contact-button').prop('disabled', false);
+            return;
+          }
+    
           // Send form data to PHP server
           $.post('send_email.php', {
             name: name,
@@ -730,6 +747,7 @@ footer span {
         });
       });
     </script>
+    
 
 
 <style>
@@ -759,11 +777,19 @@ footer span {
     </div>
     <div class="contact-half contact-right">
       <div class="contact-container">
-        <input type="text" class="contact-input" placeholder="Name">
-        <input type="text" class="contact-subject" placeholder="Subject">
-        <input type="text" class="contact-input" placeholder="Email">
-        <textarea class="contact-message" placeholder="Message"></textarea>
+
+        <input type="text" class="contact-input" name="name" placeholder="Name">
+<input type="text" class="contact-subject" placeholder="Subject">
+<input type="text" class="contact-input" name="email" placeholder="Email">
+<textarea class="contact-message" name="message" placeholder="Message"></textarea>
+
+
+
         <button class="contact-button">Submit</button>
+
+
+
+
 
       </div>
     </div>
