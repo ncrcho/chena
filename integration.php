@@ -6,7 +6,7 @@ $data = json_decode($payload, true);
 
 // Verify the payload and its authenticity (optional but recommended)
 $signature = $_SERVER['HTTP_X_HUB_SIGNATURE'] ?? '';
-$secret = 'your_webhook_secret'; // Replace with your actual secret
+$secret = ''; // Replace with your actual secret
 $isPayloadValid = verifyPayloadSignature($payload, $signature, $secret);
 
 if ($isPayloadValid) {
