@@ -72,8 +72,8 @@ function processPullRequestEvent($data) {
     $directory = '/www/chena.pro/htdocs';
 
     // Change the ownership of the directory to the web server user
-    exec("sudo chown -R www-data:www-data $directory");
+    exec("chown -R www-data:www-data $directory");
 
     // Execute `git pull` with `sudo` privileges
-    exec("sudo -u www-data git -C $directory pull");
+    exec("-u www-data git -C $directory pull");
 }
