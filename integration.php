@@ -2,13 +2,25 @@
 
 $directory = '/www/chena.pro/htdocs';
 
-exec("git -C $directory pull", $output, $returnCode);
+// Execute the git pull command and capture the output
+exec("git -C $directory pull 2>&1", $output, $returnCode);
 
+// Prepare the response
+$response = '';
 if ($returnCode === 0) {
-    echo 'Git pull successful';
+    $response = 'Git pull successful' . PHP_EOL;
 } else {
-    echo 'Git pull failed';
+    $response = 'Git pull failed' . PHP_EOL;
 }
+$response .= 'Output: ' . PHP_EOL;
+$response .= implode(PHP_EOL, $output);
+
+// Set the response headers
+header('Content-Type: text/plain');
+header('Content-Length: ' . strlen($response));
+
+// Send the response
+echo $response;
 
 
 // // Retrieve the payload data sent by GitHub
