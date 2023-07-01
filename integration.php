@@ -2,7 +2,13 @@
 
 $directory = '/www/chena.pro/htdocs';
 
-exec("cd $directory && git pull ");
+exec("git -C $directory pull", $output, $returnCode);
+
+if ($returnCode === 0) {
+    echo 'Git pull successful';
+} else {
+    echo 'Git pull failed';
+}
 
 
 // // Retrieve the payload data sent by GitHub
