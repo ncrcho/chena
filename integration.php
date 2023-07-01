@@ -1,7 +1,10 @@
 <?php
 
+
 $directory = '~/chena.pro/htdocs';
 
+// Discard all local changes
+exec("git -C $directory reset --hard");
 
 // Execute the git pull command and capture the output
 exec("git -C $directory pull 2>&1", $output, $returnCode);
@@ -22,6 +25,7 @@ header('Content-Length: ' . strlen($response));
 
 // Send the response
 echo $response;
+?>
 
 
 // // Retrieve the payload data sent by GitHub
