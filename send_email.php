@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Send email
-    $to = "ncrcho@gmail.com";
+    $to = "contact@chena.pro";
     $subject = "New Contact Form Submission";
     $body = "Name: " . $name . "\n";
     $body .= "Email: " . $email . "\n";
