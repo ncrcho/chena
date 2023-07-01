@@ -9,11 +9,20 @@ require 'vendor/autoload.php';
 // Outlook SMTP server settings
 $smtp_server = 'smtp.office365.com';
 $smtp_port = 587;
-$smtp_username = 'ncrcho@outlook.com';  // Replace with your Outlook email address
-$smtp_password = 'Lwrnc11411488oojEzz';  // Replace with your Outlook email password
 
-$sender_email = 'ncrcho@outlook.com';  // Replace with your Outlook email address
-$receiver_email = 'ncrcho@gmail.com';  // Replace with the recipient's email address
+
+$json_data = file_get_contents('info.json');
+
+// Convert the JSON data into a PHP object
+$info = json_decode($json_data);
+
+
+// Extract the values from the object
+$smtp_username = $info->smtp_username;
+$smtp_password = $info->smtp_password;
+$sender_email = $info->sender_email;
+$receiver_email = $info->receiver_email;
+
 $subject = "ChenaClient: " . $_POST['subject'];
 
 
