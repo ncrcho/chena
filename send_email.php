@@ -1,77 +1,63 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
 
-    // Validate the form fields
-    if (empty($name) || empty($email) || empty($message)) {
-        echo 'error: Missing required fields';
-        return;
-    }
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
-    // Validate email format
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo 'error: Invalid email format';
-        return;
-    }
+require 'vendor/autoload.php';
 
-    // Send email
-    $to = "contact@chena.pro";
-    $subject = "New Contact Form Submission";
-    $body = "Name: " . $name . "\n";
-    $body .= "Email: " . $email . "\n";
-    $body .= "Message: " . $message;
-    $headers = "From: " . $email;
+// Outlook SMTP server settings
+$smtp_server = 'smtp.office365.com';
+$smtp_port = 587;
+$smtp_username = 'ncrcho@outlook.com';  // Replace with your Outlook email address
+$smtp_password = 'Lwrnc11411488oojEzz';  // Replace with your Outlook email password
 
-    // Email configuration
-    $mailConfig = array(
-        'protocol' => 'imap',
-        'host' => 'imap.barid.com',
-        'port' => 993,
-        'username' => 'fsd@barid.com',
-        'password' => '@C4cYc6g9XHyw_v', // Replace with the actual password
-        'encryption' => 'ssl',
-        'smtpHost' => 'smtp.barid.com',
-        'smtpPort' => 465,
-        'smtpUsername' => 'fsd@barid.com',
-        'smtpPassword' => '@C4cYc6g9XHyw_v', // Replace with the actual password
-    );
+$sender_email = 'ncrcho@outlook.com';  // Replace with your Outlook email address
+$receiver_email = 'ncrcho@gmail.com';  // Replace with the recipient's email address
+$subject = "ChenaClient: " . $_POST['subject'];
 
-    // Send email using the configured mail settings
-    $result = sendMail($mailConfig, $to, $subject, $body, $headers);
 
-    if ($result) {
-        echo "success";
-    } else {
-        echo 'error: Failed to send email';
-    }
+$postData = $_POST;
+
+// Convert $_POST array to string format
+$postString = '';
+foreach ($postData as $key => $value) {
+    $postString .= $key . ' : ' . $value . "\n";
 }
 
-function sendMail($mailConfig, $to, $subject, $body, $headers) {
-    // Create an IMAP connection
-    $imap = imap_open(
-        '{' . $mailConfig['host'] . ':' . $mailConfig['port'] . '/imap/' . $mailConfig['encryption'] . '}',
-        $mailConfig['username'],
-        $mailConfig['password']
-    );
+// echo $postString;
 
-    if (!$imap) {
-        return false;
-    }
 
-    // Compose the email
-    $message = "To: " . $to . "\r\n";
-    $message .= "Subject: " . $subject . "\r\n";
-    $message .= $headers . "\r\n\r\n";
-    $message .= $body;
+
+
+$message = $postString;
+// $postString = implode("\n", $postData);
+
+// Create a new PHPMailer instance
+$mail = new PHPMailer(true);
+
+try {
+    // Set the SMTP server details
+    $mail->isSMTP();
+    $mail->Host = $smtp_server;
+    $mail->Port = $smtp_port;
+    $mail->SMTPAuth = true;
+    $mail->Username = $smtp_username;
+    $mail->Password = $smtp_password;
+    $mail->SMTPSecure = 'tls';
+
+    // Set the sender and recipient email addresses
+    $mail->setFrom($sender_email);
+    $mail->addAddress($receiver_email);
+
+    // Set the email subject and body
+    $mail->Subject = $subject;
+    $mail->Body = $message;
 
     // Send the email
-    $sent = imap_mail($to, $subject, $message, $headers);
-
-    // Close the IMAP connection
-    imap_close($imap);
-
-    return $sent;
+    $mail->send();
+    echo 'Thank you for your message. It has been sent.';
+} catch (Exception $e) {
+    echo 'Error sending email: ' . $mail->ErrorInfo;
 }
 ?>

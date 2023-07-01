@@ -763,11 +763,11 @@ footer span {
           }, function(response) {
             // Handle the response from the server
             if (response === 'success') {
-              alert('Thank you for contacting us! We will get back to you shortly.');
+              alert(response);
               // Reset the form
               $('.contact-container')[0].reset();
             } else {
-              alert('Oops! Something went wrong. Please try again.');
+              alert(response);
             }
             
             // Enable the submit button
