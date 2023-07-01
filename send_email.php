@@ -1,5 +1,3 @@
-
-
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
@@ -8,13 +6,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate the form fields
     if (empty($name) || empty($email) || empty($message)) {
-        echo 'error';
+        echo 'error: Missing required fields';
         return;
     }
 
     // Validate email format
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo 'error';
+        echo 'error: Invalid email format';
         return;
     }
 
@@ -26,14 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "Message: " . $message;
     $headers = "From: " . $email;
 
-
-    mail($to, $subject, $body, $headers);
-
-    // if (mail($to, $subject, $body, $headers)) {
-    //     echo "success";
-    // } else {
-    //     echo "error";
-    // }
+    $result = mail($to, $subject, $body, $headers);
+    echo $result;
+    if ($result) {
+        echo "success";
+    } else {
+        echo 'error: Failed to send email';
+    }
 }
 ?>
-
