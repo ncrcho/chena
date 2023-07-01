@@ -1,7 +1,6 @@
 <?php
 
 $directory = '~/chena.pro/htdocs';
-exec("git config --global --add safe.directory /var/www/chena.pro/htdocs", $output, $returnCode);
 
 
 // Execute the git pull command and capture the output
