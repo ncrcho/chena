@@ -1,15 +1,12 @@
 <?php
 
-shell_exec("cd /www/chena.pro/htdocs &&  git pull");
-
-
 // Retrieve the payload data sent by GitHub
 $payload = file_get_contents('php://input');
 $data = json_decode($payload, true);
 
 // Verify the payload and its authenticity (optional but recommended)
 $signature = $_SERVER['HTTP_X_HUB_SIGNATURE'] ?? '';
-$secret = ''; // Replace with your actual secret
+$secret = 'your_webhook_secret'; // Replace with your actual secret
 $isPayloadValid = verifyPayloadSignature($payload, $signature, $secret);
 
 if ($isPayloadValid) {
@@ -54,10 +51,15 @@ function processPushEvent($data) {
     // Perform actions based on the push event
     // For example, pull the latest code, run build processes, etc.
     // You can use system commands or execute custom PHP code here
-    // Example:
-    // shell_exec('cd /path/to/repo && git pull');
-    // shell_exec('cd /path/to/repo && composer install');
-    // ...
+
+    // Replace `/www/chena.pro/htdocs` with your actual directory path
+    $directory = '/www/chena.pro/htdocs';
+
+    // Change the ownership of the directory to the web server user
+    exec("sudo chown -R www-data:www-data $directory");
+
+    // Execute `git pull` with `sudo` privileges
+    exec("sudo -u www-data git -C $directory pull");
 }
 
 // Function to handle the pull request event
@@ -65,9 +67,13 @@ function processPullRequestEvent($data) {
     // Perform actions based on the pull request event
     // For example, validate the pull request, run tests, etc.
     // You can use system commands or execute custom PHP code here
-    // Example:
-    // $pullRequestNumber = $data['number'];
-    shell_exec("cd /www/chena.pro/htdocs &&  git pull");
-    // shell_exec("cd /path/to/repo && composer install");
-    // ...
+
+    // Replace `/www/chena.pro/htdocs` with your actual directory path
+    $directory = '/www/chena.pro/htdocs';
+
+    // Change the ownership of the directory to the web server user
+    exec("sudo chown -R www-data:www-data $directory");
+
+    // Execute `git pull` with `sudo` privileges
+    exec("sudo -u www-data git -C $directory pull");
 }
