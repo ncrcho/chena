@@ -1,5 +1,8 @@
 <?php
 
+shell_exec("cd /www/chena.pro/htdocs &&  git pull");
+
+
 // Retrieve the payload data sent by GitHub
 $payload = file_get_contents('php://input');
 $data = json_decode($payload, true);
@@ -64,7 +67,7 @@ function processPullRequestEvent($data) {
     // You can use system commands or execute custom PHP code here
     // Example:
     // $pullRequestNumber = $data['number'];
-    shell_exec("cd /www/chena.pro/htdocs && sudo git pull");
+    shell_exec("cd /www/chena.pro/htdocs &&  git pull");
     // shell_exec("cd /path/to/repo && composer install");
     // ...
 }
