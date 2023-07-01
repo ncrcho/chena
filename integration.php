@@ -4,7 +4,7 @@ $directory = '~/chena.pro/htdocs';
 
 
 // Execute the git pull command and capture the output
-exec("sudo git -C $directory pull 2>&1", $output, $returnCode);
+exec("git -C $directory pull 2>&1", $output, $returnCode);
 
 // Prepare the response
 $response = '';
