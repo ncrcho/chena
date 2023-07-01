@@ -1,6 +1,6 @@
 <?php
 
-$directory = '~/www/chena.pro/htdocs$';
+$directory = '~/www/chena.pro/htdocs';
 
 // Execute the git pull command and capture the output
 exec("git -C $directory pull 2>&1", $output, $returnCode);
