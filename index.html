@@ -6,13 +6,11 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <style>
-    #illustration {
-      width: 500px;
-      height: 500px;
-      margin-top: 450px;
+  <!-- <style>
+    .illustration {
+      width: 300px;
     }
-  </style>
+  </style> -->
 
 <title>Website</title>
 <style>
@@ -505,7 +503,9 @@ footer span {
   
     </script>
     <!-- <script src="Index.js"></script> -->
-    <img src="logo.png" alt="Logo" class="logo">
+    <a href="https://chena.pro">
+      <img src="logo.png" alt="Logo" class="logo">
+    </a>    
     <div class="social-icons">
       <a href="https://dribbble.com" target="_blank">
         <img src="Dribbble.png" alt="Social Icon 1">
@@ -529,8 +529,12 @@ footer span {
   <div class="main-section">
     <div class="content">
       <div class="left">
-        <h1 class="title">Brand and Logo Design</h1>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, to Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatu.</p>
+        <h1 class="title">Welcome to my world.</h1>
+        <p>The work of Chena emphasizes high-quality designs that align with design principles and client briefs.
+          The goal is to convey the intended message to the target audience effectively.          
+  <!-- The work of Chena is based on five years of experience as a graphic designer with a focus on high-quality designs that adhere to design principles and the brief of the client to ensure getting the most of the design to reach and deliver the intended message by the brief to the target audience. -->
+        
+        </p>
         
       </div>
 
@@ -540,12 +544,14 @@ footer span {
       
       <div class="right">
 
-        <div id="illustration"></div>
+        <div class="illustration">
+          <img src="illustration.gif" alt="" style="width: 450px;margin-top: 100px;margin-left: 162px;">
+        </div>
 
-        <script>
+        <!-- <script>
           // Load the SVG file
           var xhr = new XMLHttpRequest();
-          xhr.open('GET', './illustration.svg', true);
+          xhr.open('GET', './illustration.gif', true);
           xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
               var svgContent = xhr.responseText;
@@ -563,7 +569,7 @@ footer span {
               });
             }
           };
-          xhr.send();
+          xhr.send(); -->
         </script>
 
 
@@ -805,8 +811,9 @@ footer span {
   <h1 class="section-title title3">Let's Connect</h1>
   <div class="contact-section">
     <div class="contact-half contact-left">
-      <h1 class="contact-title">Ready to team up?</h1>
-      <p class="contact-text">Find me on social, connect with me through this form, or write directly </p>
+      <h1 class="contact-title">Ready to collaborate?</h1>
+      <p class="contact-text">Discover me on social media, establish a connection via this form, or reach out to me directly.
+      </p>
       <br>
 <a href="mailto:contact@chena.pro" class="contact-email">contact@chena.pro</a>
     </div>
