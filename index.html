@@ -70,7 +70,7 @@
 
 
 .review-container img {
-height: 50px;
+height: 60px;
 
 }
 
@@ -80,7 +80,9 @@ height: 50px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  pointer-events: none;
 }
+
 /* .section-icon {
   width: 60px;
   height: 60px;
@@ -170,7 +172,10 @@ header img.logo {
   font-weight:normal;
   margin: 0;
   margin-top: 8px;
-  width: 420px;
+  width: 460px;
+
+  /* text-align: justify;
+  text-align-last: left; */
 }
 
 /*.content .left button {
@@ -296,7 +301,8 @@ footer span {
 
 .contact-text {
   font-size: 17px;
-  margin-bottom: 4px;
+  margin-bottom: 0;
+  margin-top: 7px;
   width: 360px;
 
 }
@@ -305,7 +311,6 @@ footer span {
   font-size: 18px;
   font-weight: bold;
   margin: 0;
-  margin-top: 25px;
 }
 
 .contact-right {
@@ -562,13 +567,13 @@ footer span {
       <img src="logo.png" alt="Logo" class="logo">
     </a>    
     <div class="social-icons">
-      <a href="https://dribbble.com" target="_blank">
+      <a href="https://99designs.com/profiles/chenadesign" target="_blank">
         <img src="Dribbble.png" alt="Social Icon 1">
       </a>
-      <a href="https://dribbble.com" target="_blank">
+      <a href="https://instagram.com/chena.design/" target="_blank">
         <img src="Instagram.png" alt="Social Icon 3">
       </a>
-      <a href="https://dribbble.com" target="_blank">
+      <a href="https://dribbble.com/chena_" target="_blank">
         <img src="Behance.png" alt="Social Icon 2">
       </a>
     </div>
@@ -701,86 +706,174 @@ footer span {
   </div>
   
   <script>
+    // const reviews = [
+    //   {
+    //     review: "Chena was very attentive, creative, resourceful, imaginative, and professional. He made sure I felt comfortable with every aspect of the design and worked hard to get al the details right. I would work with him again!!",
+    //     name: "Vivacity Pilates"
+    //   },
+    //   {
+    //     review: "Praesent eu enim nec quam sollicitudin placerat nec sit amet mi.",
+    //     name: "Jane Smith"
+    //   },
+    //   {
+    //     review: "Vivamus vitae finibus orci, vel maximus lorem.",
+    //     name: "David Johnson"
+    //   },
+    //   {
+    //     review: "Nulla vitae est euismod, ullamcorper lectus quis, feugiat quam.",
+    //     name: "Emily Davis"
+    //   }
+    // ];
+  
+    // let currentReviewIndex = 0;
+    // let touchStartX = 0;
+    // let touchEndX = 0;
+  
+    // function showReview(index) {
+    //   const review = reviews[index];
+    //   const reviewElement = document.querySelector(".customer-review");
+    //   const nameElement = document.querySelector(".customer-name");
+  
+    //   // Apply fade-in animation class
+    //   reviewElement.classList.remove("active");
+    //   nameElement.classList.remove("active");
+  
+    //   // Update review content
+    //   reviewElement.textContent = review.review;
+    //   nameElement.textContent = review.name;
+  
+    //   // Trigger reflow to restart the animation
+    //   void reviewElement.offsetWidth;
+    //   void nameElement.offsetWidth;
+  
+    //   // Add fade-in animation class after a short delay
+    //   setTimeout(() => {
+    //     reviewElement.classList.add("active");
+    //     nameElement.classList.add("active");
+    //   }, 100);
+    // }
+  
+    // function previousReview() {
+    //   currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
+    //   showReview(currentReviewIndex);
+    // }
+  
+    // function nextReview() {
+    //   currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+    //   showReview(currentReviewIndex);
+    // }
+  
+    // function handleTouchStart(event) {
+    //   touchStartX = event.touches[0].clientX;
+    // }
+  
+    // function handleTouchMove(event) {
+    //   touchEndX = event.touches[0].clientX;
+    //   handleSwipe();
+    // }
+  
+    // function handleSwipe() {
+    //   const threshold = 100; // Minimum swipe distance required
+    //   const delta = touchEndX - touchStartX;
+  
+    //   if (delta > threshold) {
+    //     // Swiped right, go to previous review
+    //     previousReview();
+    //   } else if (delta < -threshold) {
+    //     // Swiped left, go to next review
+    //     nextReview();
+    //   }
+    // }
+  
+    // showReview(currentReviewIndex);
+
     const reviews = [
-      {
-        review: "Chena was very attentive, creative, resourceful, imaginative, and professional. He made sure I felt comfortable with every aspect of the design and worked hard to get al the details right. I would work with him again!!",
-        name: "Vivacity Pilates"
-      },
-      {
-        review: "Praesent eu enim nec quam sollicitudin placerat nec sit amet mi.",
-        name: "Jane Smith"
-      },
-      {
-        review: "Vivamus vitae finibus orci, vel maximus lorem.",
-        name: "David Johnson"
-      },
-      {
-        review: "Nulla vitae est euismod, ullamcorper lectus quis, feugiat quam.",
-        name: "Emily Davis"
-      }
-    ];
-  
-    let currentReviewIndex = 0;
-    let touchStartX = 0;
-    let touchEndX = 0;
-  
-    function showReview(index) {
-      const review = reviews[index];
-      const reviewElement = document.querySelector(".customer-review");
-      const nameElement = document.querySelector(".customer-name");
-  
-      // Apply fade-in animation class
-      reviewElement.classList.remove("active");
-      nameElement.classList.remove("active");
-  
-      // Update review content
-      reviewElement.textContent = review.review;
-      nameElement.textContent = review.name;
-  
-      // Trigger reflow to restart the animation
-      void reviewElement.offsetWidth;
-      void nameElement.offsetWidth;
-  
-      // Add fade-in animation class after a short delay
-      setTimeout(() => {
-        reviewElement.classList.add("active");
-        nameElement.classList.add("active");
-      }, 100);
-    }
-  
-    function previousReview() {
-      currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
-      showReview(currentReviewIndex);
-    }
-  
-    function nextReview() {
-      currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
-      showReview(currentReviewIndex);
-    }
-  
-    function handleTouchStart(event) {
-      touchStartX = event.touches[0].clientX;
-    }
-  
-    function handleTouchMove(event) {
-      touchEndX = event.touches[0].clientX;
-      handleSwipe();
-    }
-  
-    function handleSwipe() {
-      const threshold = 100; // Minimum swipe distance required
-      const delta = touchEndX - touchStartX;
-  
-      if (delta > threshold) {
-        // Swiped right, go to previous review
-        previousReview();
-      } else if (delta < -threshold) {
-        // Swiped left, go to next review
-        nextReview();
-      }
-    }
-  
-    showReview(currentReviewIndex);
+  {
+    review: "Chena was very attentive, creative, resourceful, imaginative, and professional. He made sure I felt comfortable with every aspect of the design and worked hard to get all the details right. I would work with him again!!",
+    name: "Vivacity Pilates"
+  },
+  {
+    review: "Praesent eu enim nec quam sollicitudin placerat nec sit amet mi.",
+    name: "Jane Smith"
+  },
+  {
+    review: "Vivamus vitae finibus orci, vel maximus lorem.",
+    name: "David Johnson"
+  },
+  {
+    review: "Nulla vitae est euismod, ullamcorper lectus quis, feugiat quam.",
+    name: "Emily Davis"
+  }
+];
+
+let currentReviewIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
+
+function showReview(index) {
+  const review = reviews[index];
+  const reviewElement = document.querySelector(".customer-review");
+  const nameElement = document.querySelector(".customer-name");
+
+  // Apply fade-in animation class
+  reviewElement.classList.remove("active");
+  nameElement.classList.remove("active");
+
+  // Update review content
+  reviewElement.textContent = review.review;
+  nameElement.textContent = review.name;
+
+  // Trigger reflow to restart the animation
+  void reviewElement.offsetWidth;
+  void nameElement.offsetWidth;
+
+  // Add fade-in animation class after a short delay
+  setTimeout(() => {
+    reviewElement.classList.add("active");
+    nameElement.classList.add("active");
+  }, 100);
+}
+
+function previousReview() {
+  currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
+  showReview(currentReviewIndex);
+}
+
+function nextReview() {
+  currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+  showReview(currentReviewIndex);
+}
+
+function handleTouchStart(event) {
+  touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+  touchEndX = event.touches[0].clientX;
+  handleSwipe();
+}
+
+function handleSwipe() {
+  const threshold = 100; // Minimum swipe distance required
+  const delta = touchEndX - touchStartX;
+
+  if (delta > threshold) {
+    // Swiped right, go to previous review
+    previousReview();
+  } else if (delta < -threshold) {
+    // Swiped left, go to next review
+    nextReview();
+  }
+}
+
+function startReviewRotation() {
+  setInterval(() => {
+    nextReview();
+  }, 6000);
+}
+
+showReview(currentReviewIndex);
+startReviewRotation();
   </script>
   
   
@@ -870,7 +963,7 @@ footer span {
       <h1 class="contact-title">Ready to collaborate?</h1>
       <p class="contact-text">Discover me on social media, establish a connection via this form, or reach out to me directly.
       </p>
-      <br>
+      
 <a href="mailto:contact@chena.pro" class="contact-email">contact@chena.pro</a>
     </div>
     <div class="contact-half contact-right">
