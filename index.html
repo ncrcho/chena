@@ -56,12 +56,14 @@
 }
 .left-arrow  img {
   cursor: pointer;
+  margin-left: 194px;
 }
 .right-arrow {
   right:140px;
 }
 .right-arrow  img {
   cursor: pointer;
+  margin-right: 194px;
 }
 .review-container {
   display: flex;
@@ -74,7 +76,7 @@
 .review-container img {
   height: 75px;
   position: absolute;
-  top: 32px;
+  top: 22px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -191,6 +193,8 @@ body {
   padding: 280px 20px;
   height: 420px;
   justify-content: space-evenly;
+  background-color: #000000;
+  color: #FFFDFB;
 }
 
 .content .left {
@@ -331,9 +335,9 @@ footer span {
 }
 
 .contact-left {
-  margin-left: 140px;
+  margin-left: 331px;
   color: #000000;
-  margin-top: 70px;
+  margin-top: 62px;
 }
 
 .contact-title {
@@ -345,8 +349,8 @@ footer span {
 
 .contact-text {
   font-size: 17px;
-  margin-bottom: 0;
-  
+  margin-bottom: 12px;
+  margin-top: 12px;
   width: 360px;
 
 }
@@ -354,24 +358,24 @@ footer span {
 .contact-email {
   font-size: 18px;
   font-weight: bold;
-  margin: 0;
+  margin: 4px 0 0 0;
 }
 
 .contact-right {
-  margin-right: 140px;
+  margin-right: 340px;
 }
 
 .contact-container {
   display: grid;
   margin-top: 80px;
-  grid-template-columns: 311px auto;
+  grid-template-columns: 281px auto;
   gap: 30px;
   padding-bottom: 37px;
 }
 
 
 .contact-input {
-  width: 270px;
+  width: 240px;
   height: 54px;
   background-color: #fffdfb;
   border: 1.5px solid #000000;
@@ -382,7 +386,7 @@ footer span {
 }
 
 .contact-button {
-  width: 311px;
+  width: 281px;
   height: 54px;
   background-color: #000000;
   border: 1.5px solid #000000;
@@ -392,7 +396,7 @@ footer span {
 }
 
 .contact-subject {
-  width: 520px;
+  width: 395px;
   height: 54px;
   background-color: #fffdfb;
   border: 1.5px solid #000000;
@@ -403,7 +407,7 @@ footer span {
 }
 
 .contact-message {
-  width: 520px;
+  width: 395px;
   height: 98px;
   background-color: #fffdfb;
   border: 1.5px solid #000000;
@@ -413,7 +417,7 @@ footer span {
 }
 .section-title {
     color: #000000;
-    margin: 20px 140px;
+    margin: 20px 335px;
     font-size: 32px;
     font-weight: bold;
     margin-top: 60px;
@@ -440,7 +444,7 @@ footer span {
       position: absolute;
       bottom: 3px;
       left: -7px;
-      width: 19.1%;
+      width: 12.1%;
       height: 12px;
       background-color: #E8684D;
       z-index: -1;
@@ -761,7 +765,7 @@ footer span {
     }
 
     .customer-review {
-      width: 690px;
+      width: 590px;
       font-size: 17px;
     }
   </style>
@@ -949,7 +953,7 @@ function handleSwipe() {
 function startReviewRotation() {
   setInterval(() => {
     nextReview();
-  }, 6000);
+  }, 800000);
 }
 
 showReview(currentReviewIndex);

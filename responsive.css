@@ -36,18 +36,18 @@ header {
 
 
   .grid-images {
-    max-width: 1617px;
+    max-width: 1230px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
   
   @media (max-width: 1200px) {
     .grid-images {
       grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      padding: 0 25px;
+      gap: 30px;
+      padding: 0 30px;
     }
     
     .logo, .social-icons {
@@ -57,7 +57,7 @@ header {
 
     .section-title {
         position: relative;
-        margin: 20px 10px;
+        margin: 20px 28px;
     }
 
   }

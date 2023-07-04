@@ -105,7 +105,7 @@ function retrieveImageData() {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
         const images = JSON.parse(xhr.responseText);
-        const imagesPerPage = 16; // Define the images per page
+        const imagesPerPage = 9; // Define the images per page
         generatePagination(images, imagesPerPage);
         generateImageElements(images, currentPage, imagesPerPage);
       } else {
