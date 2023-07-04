@@ -54,12 +54,20 @@ header {
         margin-left: calc(93px - 330px);
         margin-right: calc(349px - -574px);
     }
-
+    *************************
     .section-title {
         position: relative;
         margin: 20px 28px;
     }
 
+    .right-arrow img {
+        margin-right: -140px;
+    }
+
+    .left-arrow img {
+        margin-right: -140px;
+    }
+    *************************
   }
   
   @media (max-width: 800px) {
