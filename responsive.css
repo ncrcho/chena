@@ -1,11 +1,11 @@
 
  @media (max-width:720px) {
-.social-icons {
+/* .social-icons {
     margin-right: inherit ;
 }
 header img.logo {
     margin-left: inherit ;
-}
+} */
 .illustration {
     display: none;
 }
@@ -20,15 +20,21 @@ header {
 }
 .content .left h1 {
     font-size: 42px !important;
-    width: 326px !important;
+    max-width: 326px !important;
+    text-align: center;
+   
 }
 .content .left p {
     font-size: 15px !important;
-    width: 337px !important;
+    max-width: 388px !important;
 }
 .content {
     padding: 280px 157px;
     height: 73px !important;
+}
+.content .left {
+    text-align: -webkit-center;
+    display: block;
 }
 
 }
@@ -50,7 +56,7 @@ header {
       padding: 0 30px;
     }
     
-    .logo, .social-icons {
+    /* .logo, .social-icons {
         margin-left: calc(93px - 330px);
         margin-right: calc(349px - -574px);
     }
@@ -66,7 +72,7 @@ header {
 
     .left-arrow img {
         margin-right: -140px;
-    }
+    } */
     *************************
   }
   
@@ -93,4 +99,5 @@ header {
       gap: 15px;
       padding: 0 15px;
     }
+   
   }
