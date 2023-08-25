@@ -873,7 +873,7 @@ button:hover {
   }
 }
 
-@keyframes imgAnimation {
+/* @keyframes imgAnimation {
   from {
       transform: translate3d(0px, 12.8438px, 0px);
       opacity: 0;
@@ -884,7 +884,7 @@ button:hover {
       opacity: 1;
 
   }
-}
+} */
 
 @keyframes homeTitleAnimation {
   from {
