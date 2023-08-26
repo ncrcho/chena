@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollToSection("#section_4");
   });
 
-  service.addEventListener("click", function () {
+  Home.addEventListener("click", function () {
     scrollToSection("#section99");
   });
 
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const work_mob = document.getElementById("work_mob");
   const about_mob = document.getElementById("about_mob");
-  const service_mob = document.getElementById("service_mob");
+  const service_mob = document.getElementById("Home_mob");
 
 
   
@@ -175,8 +175,8 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollToSection("#section_4");
   });
 
-  service_mob.addEventListener("click", function () {
-    scrollToSection("#section99");
+  Home_mob.addEventListener("click", function () {
+    scrollToSection("#section1");
   });
 
 
