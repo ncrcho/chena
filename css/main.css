@@ -98,7 +98,7 @@ header h1 {
   flex-basis: 50%;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 nav {
     flex-basis: 50%;
