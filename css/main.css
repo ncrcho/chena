@@ -91,7 +91,7 @@ header h1 {
 }
 .logo img {
   margin-top: 8.5px;
-  width: 110px;
+  width: 100px;
 }
 
 .logo {
@@ -145,7 +145,7 @@ nav ul a {
       /* landing */
       .landing {
         background-color: #171717;
-        height: calc(100vh - 95px);
+        height: calc(100.1vh - 95px);
         position: relative;
         z-index: -10;
         overflow: hidden;
