@@ -176,7 +176,7 @@ nav ul a {
 
 }
   .landing h1 {
-    font-size: 9vw;
+    font-size: 9rem;
     font-weight: 400;
     font-family: 'Chillax-Regular' !important;
     line-height: 100%;
@@ -277,7 +277,7 @@ display: none;
       /* landing */
 /* .testmonial */
 .testmonial {
-  padding: 38px 15px;
+  padding: 38px 15px 100px 15px;
 }
 /* .testmonial  */
 .title {
