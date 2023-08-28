@@ -91,7 +91,7 @@ header h1 {
 }
 .logo img {
   margin-top: 8.5px;
-  width: 100px;
+  width: 92px;
 }
 
 .logo {
@@ -410,13 +410,13 @@ display: none;
   border: 1px solid rgba(255,255,255,.15);
   font-size: 12px;
   position: absolute;
-  font-family: 'Chillax-Regular';
-  top: 429px;
+  font-family: 'Chillax-light';
+  top: 436px;
   left: 85px;
-  padding: 0.3rem 0.5rem;
-  letter-spacing: .5px;
-  border-radius: 5px;
-  font-family: 'Chillax-Light';
+  padding: 0.35rem 0.65rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  
 }
 .icons {
   position: absolute;
