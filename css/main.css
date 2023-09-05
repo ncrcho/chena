@@ -145,7 +145,8 @@ nav ul a {
       /* landing */
       .landing {
         background-color: #171717;
-        height: calc(100.1vh - 95px);
+        /* height: calc(100.1vh - 95px); */
+        height: calc(100.1vh - 162px);
         position: relative;
         z-index: -10;
         overflow: hidden;
@@ -176,7 +177,7 @@ nav ul a {
 
 }
   .landing h1 {
-    font-size: 9rem;
+    font-size: 9vw;
     font-weight: 400;
     font-family: 'Chillax-Regular' !important;
     line-height: 100%;
@@ -206,6 +207,10 @@ nav img {
 
 
 @media (max-width:855px) {
+
+  .landing  {
+    height: calc(100.1vh - 95px);
+  }
   .one-image {
     display: none;
   }
@@ -259,9 +264,13 @@ nav img {
 display: none;
  
 }
-  
-}
 
+}
+@media (min-width:1200px) {
+  .landing {
+    height: calc(100.1vh - 95px) ; 
+  }
+}
 @media (min-width: 1700px) {
   
   .landing h1 {
@@ -369,11 +378,16 @@ display: none;
 .box > h2 {
   font-size: 1.5rem;
 }
+
 }
 @media (max-width:992px ) {
   .boxs {
     padding: 0 15px;
     grid-template-columns: 1fr  1fr;
+}
+
+.landing img.one-image {
+  top: 3% !important;
 }
 /* .testmonial  */
 .title h1 {
@@ -562,7 +576,7 @@ font-family: 'Chillax-Regular';
 }
   @media (max-width:1200px) {
     .landing img.one-image {
-      top:7%;
+      top:-6%;
   }
   }
 /* contact */
@@ -936,12 +950,12 @@ button:hover {
 
 @keyframes footerTitleAnimation {
   from {
-      transform: translate3d(-50%, 16px, 0px);
+      transform: translate3d(0px, 16px, 0px);
       opacity: 0.5;
 
   }
   to {
-      transform: translate3d(-50%, 0px, 0px);
+      transform: translate3d(0px, 0px, 0px);
       opacity: 1;
 
   }
