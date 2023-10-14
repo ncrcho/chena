@@ -229,7 +229,7 @@ overflow: hidden;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .transparent-background {
     background-color: transparent !important;
   }
