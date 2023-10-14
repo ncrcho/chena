@@ -237,6 +237,8 @@ overflow: hidden;
       padding: 25px  25px 100px;
       background-color: #171717;
       z-index: -1;
+      background-color: transparent !important;
+
   }
   .landing .container .hero-mini {
     display: inline;
