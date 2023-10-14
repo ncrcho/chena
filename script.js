@@ -140,21 +140,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   
-  scrollToTopButton.addEventListener("click", function () {
-    scrollToSection("#header");
-  });
 
-  work.addEventListener("click", function () {
-    scrollToSection(".portfolio");
-  });
-  about.addEventListener("click", function () {
-    scrollToSection("#section_4");
-  });
 
-  Home.addEventListener("click", function () {
-    scrollToSection("#section99");
-  });
 
+  if (scrollToTopButton) {
+      scrollToTopButton.addEventListener("click", function () {
+          scrollToSection("#header");
+      });
+  }
+
+  if (work) {
+    work.addEventListener("click", function () {
+        scrollToSection(".portfolio");
+    });
+}
+
+if (about) {
+    about.addEventListener("click", function () {
+        scrollToSection("#section_4");
+    });
+}
+
+if (Home) {
+    Home.addEventListener("click", function () {
+        scrollToSection("#section99");
+    });
+}
 
 
 
