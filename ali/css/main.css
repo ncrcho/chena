@@ -228,6 +228,13 @@ overflow: hidden;
     height: calc(162.1vh - 162px);
   }
 }
+
+@media (min-width: 768px) {
+  .transparent-background {
+    background-color: transparent !important;
+  }
+}
+
 @media (max-width:768px) {
   .landing .container .hero {
     display: none;
@@ -237,7 +244,7 @@ overflow: hidden;
       padding: 25px  25px 100px;
       background-color: #171717;
       z-index: -1;
-      background-color: transparent !important;
+      
 
   }
   .landing .container .hero-mini {
