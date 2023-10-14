@@ -793,7 +793,7 @@ button:hover {
 
 
 .landing {
-  background-color: #171717;
+  /* background-color: #171717; */
   /* height: calc(100.1vh - 95px); */
   height: calc(100.1vh - 162px);
   position: relative;
