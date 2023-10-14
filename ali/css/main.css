@@ -231,6 +231,7 @@ overflow: hidden;
 @media (max-width:768px) {
   .landing .container .hero {
     display: none;
+    background-color: transparent;
      }
      .text {
       align-items: center;
