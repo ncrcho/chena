@@ -215,6 +215,7 @@ overflow: hidden;
 }
 @media (min-width:768px) {
   .landing .container .hero-mini {
+    background-color: transparent;
 
  display: none;
   }
