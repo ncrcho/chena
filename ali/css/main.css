@@ -166,6 +166,7 @@ nav ul a {
   z-index: -1;
   top: -50px;
   max-width: 1400px;
+
   
 }
 .text {
@@ -221,11 +222,13 @@ overflow: hidden;
   }
   .landing .container .hero {
  /* display: inline; */
+ background-color: transparent;
   }
   .landing{
     /* overflow: auto; */
     /* height: calc(130.1vh - 162px); */
     height: calc(162.1vh - 162px);
+    background-color: transparent;
   }
 }
 @media (max-width:768px) {
@@ -247,6 +250,7 @@ overflow: hidden;
     /* top: 0px; */
     left: 50%;
     transform: translate(-50%, 10px);
+    background-color: transparent;
      
      } 
      .text-size-xlarge {
