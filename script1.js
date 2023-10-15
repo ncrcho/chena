@@ -118,3 +118,20 @@ function retrieveImageData() {
 
 // Call the function to retrieve image data
 retrieveImageData();
+
+
+function changeBackgroundColor() {
+    var landingElement = document.querySelector('.landing');
+    if (window.innerWidth >= 768) {
+        landingElement.style.backgroundColor = 'transparent';
+    } else {
+        landingElement.style.backgroundColor = '#171717';
+    }
+}
+
+// Initial call to set the background color based on screen width
+changeBackgroundColor();
+
+// Add event listener to handle window resize
+window.addEventListener('resize', changeBackgroundColor);
+
