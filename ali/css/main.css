@@ -133,7 +133,7 @@ nav ul a {
     overflow: hidden;
 }
 
-
+z
   @media (max-width:480px) {
 
     nav img {
@@ -321,10 +321,7 @@ top: 0;
 }
 }
 
-@media (max-width:320px) {
 
- 
-}
 
 @keyframes DownToTop {
   0% {
