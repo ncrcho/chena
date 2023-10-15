@@ -132,6 +132,8 @@ nav ul a {
     width: 100%;
     overflow: hidden;
 }
+
+
   @media (max-width:480px) {
 
     nav img {
@@ -319,7 +321,10 @@ top: 0;
 }
 }
 
+@media (max-width:320px) {
 
+ 
+}
 
 @keyframes DownToTop {
   0% {
