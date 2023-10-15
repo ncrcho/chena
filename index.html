@@ -115,9 +115,40 @@
         portfolio.style.marginTop = heroMiniHeight + "px";
     </script>
 
+<script>
+    function changeBackgroundColor() {
+        var landingElement = document.querySelector('.landing');
+        if (window.innerWidth >= 768) {
+            landingElement.style.backgroundColor = 'transparent';
+        } else {
+            landingElement.style.backgroundColor = '#171717';
+        }
+    }
+
+    // Initial call to set the background color based on screen width
+    changeBackgroundColor();
+
+    // Add event listener to handle window resize
+    window.addEventListener('resize', changeBackgroundColor);
+</script>
+
+<script>
+    function changeBackgroundColor() {
+        var landingElement = document.querySelector('.landing');
+        if (window.innerWidth >= 480) {
+            landingElement.style.backgroundColor = 'transparent';
+        } else {
+            landingElement.style.backgroundColor = '#171717';
+        }
+    }
+
     
+    // Initial call to set the background color based on screen width
+    changeBackgroundColor();
 
-
+    // Add event listener to handle window resize
+    window.addEventListener('resize', changeBackgroundColor);
+</script>
     <div class="portfolio">
         <div class="containar">
 <div class="title portfolio_title">
