@@ -56,7 +56,7 @@ header {
    /* max-width: 1400px; */
    margin-left: auto;
    margin-right: auto;
-   padding-bottom: 1px;
+   padding-bottom: 8px;
 }
   header .content{
     display: flex;
@@ -132,8 +132,6 @@ nav ul a {
     width: 100%;
     overflow: hidden;
 }
-
-z
   @media (max-width:480px) {
 
     nav img {
