@@ -55,6 +55,16 @@ try {
     $mail->Password = $smtp_password;
     $mail->SMTPSecure = 'tls';
 
+
+
+    $mail->Host = $smtp_server;
+    $mail->Port = $smtp_port;
+    $mail->SMTPAuth = true;
+    $mail->Username = $smtp_username;
+    $mail->Password = $smtp_password;
+    $mail->SMTPSecure = 'tls';
+
+
     // Set the sender and recipient email addresses
     $mail->setFrom($sender_email);
     $mail->addAddress($receiver_email);
@@ -68,5 +78,7 @@ try {
     echo 'Thank you for your message. It has been sent.';
 } catch (Exception $e) {
     echo 'Error sending email: ' . $mail->ErrorInfo;
+    echo 'Error sending email: ' . $mail;
+
 }
 ?>
