@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.forEach((link) => {
         link.addEventListener("click", function (e) {
             e.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
+            const targetId = this.getAttribute("id").substring(1);
             const targetSection = document.getElementById(targetId);
 
             if (targetSection) {
