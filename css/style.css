@@ -701,7 +701,7 @@ footer {
 }
 
 #contact .contact-detail {
-    padding: 30px;
+    padding: 0px 30px 30px 0px;
     /* background-color: #000000; */
 }
 #contact .contact-detail-2 {
@@ -800,27 +800,27 @@ footer .footer-copyright p {
 -----------------------------------------*/
 
 .go-top {
-  background-color: #ffffff;
+  background-color: #000000;
   /* box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 ); */
   border-radius: 12.5%;
   transition : all 1s ease;
   bottom: 2em;
   right: 2em;
-  color: #252525;
+  color: #ddd;
   font-size: 15px;
   display: none;
   position: fixed;
   text-decoration: none;
   width: 35px;
   height: 35px;
-  line-height: 30px;
+  line-height: 33px;
   text-align: center;
-  border: 1px #202020;
+  border: 1px #a0a0a0;
 }
 
 .go-top:hover {
-    border: #000 1px solid;
-    color: #ffffff;
+    /* border: #a0a0a0 1px solid; */
+    color: #ddd;
 }
 
 
@@ -950,7 +950,7 @@ footer .footer-copyright p {
 
   h1 {
     font-size: 36px;
-    margin-top: 140px;
+    margin-top: 25px;
   }
 
   #home p,
@@ -1179,7 +1179,7 @@ footer .footer-copyright p {
     font-size: 7rem;
   }
   p.wow.fadeInUp.lr-pd.dahman {
-    margin-bottom: 207px;
+    margin-bottom: 340px;
   }
   #contact .contact-detail {
     height: 378px !important;
