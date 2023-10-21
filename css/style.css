@@ -1115,6 +1115,7 @@ footer .footer-copyright p {
 .box > img {
   margin: 0 0 2rem 0;
   width: 40px;
+  border-radius: 50%;
 }
 
 @media (min-width: 1400px){
@@ -1205,11 +1206,11 @@ footer .footer-copyright p {
 }
 }
 
-@media (max-width: 350px){
+/* @media (max-width: 350px){
   #home {
   height: 40vh;
   }
-}
+} */
 
 
 
@@ -1231,7 +1232,7 @@ footer .footer-copyright p {
 
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   #home p {
     padding-left: 20px;
     padding-right: 20px;
@@ -1240,11 +1241,11 @@ footer .footer-copyright p {
   .head {
     padding-left: 20px;
     padding-right: 20px;
-  }
+  } */
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .col-md-12 .col-sm-12 {
     margin-top: 120px;
   }
-}
+} */
