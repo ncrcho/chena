@@ -62,8 +62,8 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="/">Home</a></li>
-                        <li><a href="/#portfolio" >Work</a></li>
-                        <li><a href="/#about">About</a></li>
+                        <li><a href="/" >Work</a></li>
+                        <li><a href="/">About</a></li>
                         <!-- <li><a href="service.html">Service</a></li> -->
                         <li class="da"><a href="contact.html">Let's Talk</a></li>
                     </ul>

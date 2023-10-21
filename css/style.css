@@ -107,7 +107,9 @@ p {
 /*---------------------------------------
     General               
 -----------------------------------------*/
-
+.nav-link{
+  cursor: pointer;
+}
 html{
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
