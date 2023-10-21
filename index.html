@@ -62,9 +62,9 @@
 
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a id="_header">Home</a></li>
-                        <li><a id="_portfolio">Work</a></li>
-                        <li><a id="_about" >About</a></li>
+                        <li class="active"><a href="#header" class="nav-link">Home</a></li>
+                        <li><a href="#portfolio" class="nav-link">Work</a></li>
+                        <li><a href="#about" class="nav-link" >About</a></li>
                         <!-- <li><a href="service.html">Service</a></li> -->
                         <li class="da"><a href="contact.html">Let's Talk</a></li>
                     </ul>
@@ -73,7 +73,32 @@
             </div>
         </div>
 
+<script>
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: "smooth"
+                });
+
+                // Manipulate the URL to hide the anchor part
+                history.replaceState({}, document.title, window.location.pathname);
+            }
+        });
+    });
+});
+
+
+</script>
         <!-- Home Section -->
 
         <section id="home" class="main">
