@@ -31,7 +31,7 @@
 }
 
 body {
-	background: #DDDDDD;
+	background: #ddd;
     /* font-family: 'Montserrat', sans-serif; */
     font-style: normal;
 	font-weight: 300;
@@ -939,7 +939,7 @@ footer .footer-copyright p {
 
 @media (max-width: 650px) {
   #portfolio{
-    margin-top: 45px;
+    margin-top: 60px;
   }
  
 }
@@ -950,7 +950,7 @@ footer .footer-copyright p {
 
   h1 {
     font-size: 36px;
-    margin-top: 25px;
+    margin-top: 130px;
   }
 
   #home p,
@@ -1049,7 +1049,7 @@ footer .footer-copyright p {
   
 
 .box {
-  background-color: #dddddd;
+  background-color: #ddd;
   border: 1px solid #cccccc;
   border-radius: 0.5rem;
   padding: 2.5rem;
