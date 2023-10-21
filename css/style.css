@@ -108,6 +108,8 @@ p {
 
 html{
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+
 }
 
 a {
@@ -799,13 +801,13 @@ footer .footer-copyright p {
 
 .go-top {
   background-color: #ffffff;
-  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
-  border-radius: 2px;
+  /* box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 ); */
+  border-radius: 12.5%;
   transition : all 1s ease;
   bottom: 2em;
   right: 2em;
-  color: #333;
-  font-size: 22px;
+  color: #252525;
+  font-size: 15px;
   display: none;
   position: fixed;
   text-decoration: none;
@@ -813,10 +815,11 @@ footer .footer-copyright p {
   height: 35px;
   line-height: 30px;
   text-align: center;
+  border: 1px #202020;
 }
 
 .go-top:hover {
-    background: #000;
+    border: #000 1px solid;
     color: #ffffff;
 }
 
@@ -935,9 +938,10 @@ footer .footer-copyright p {
 }
 
 @media (max-width: 650px) {
-  .work-box {
-    margin-top: 55px;
+  #portfolio{
+    margin-top: 45px;
   }
+ 
 }
 
 @media (max-width: 650px) {
@@ -1116,7 +1120,7 @@ footer .footer-copyright p {
 .box > img {
   margin: 0 0 2rem 0;
   width: 40px;
-  border-radius: 50%;
+  border-radius: 0%;
 }
 
 @media (min-width: 1400px){
@@ -1250,9 +1254,10 @@ footer .footer-copyright p {
   }
 }
 
-@media (min-width: 992px) {
-  .col-md-4 .col-sm-6 {
-    width: 100% !important;
-  }
-}
 
+@media (min-width: 992px){
+.col-md-4s {
+
+      width: 100% !important;
+      }
+}
