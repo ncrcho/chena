@@ -87,10 +87,14 @@ h4 {
 }
 
 p {
-    color: #757575;
+    color: #000;
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
+}
+
+.bg-gray .p{
+  color: #ddd;
 }
 
 .small {
@@ -173,6 +177,7 @@ footer {
 
 .bg-gray {
   background-color: #000;
+  color: #ccc !important;
 }
 
 .bg-dark {
@@ -742,7 +747,7 @@ footer .footer-link ul li {
 }
 
 footer .footer-link ul li a {
-  color: #666;
+  color: #000;
   transition: all 0.4s ease-in-out;
   text-decoration: none;
 }
@@ -759,6 +764,9 @@ footer .footer-copyright p {
   padding-top: 8px;
 }
 
+.bg-gray .small{
+  color: #ddd !important;
+}
 
 
 /*---------------------------------------
@@ -775,9 +783,11 @@ footer .footer-copyright p {
     display: inline-block;
     list-style: none;
 }
-
+.bg-gray .social-icon li a{
+  color: #ddd;
+}
 .social-icon li a {
-    color: #666;
+    color: #000;
     border-radius: 2px;
     cursor: pointer;
     font-size: 16px;
@@ -1177,8 +1187,8 @@ footer .footer-copyright p {
   }
   
   #contact {
-    padding-top: 160px !important;
-    padding-bottom: 160px !important;
+    padding-top: 163px !important;
+    padding-bottom: 163px !important;
   }
   
   h1.wow.fadeInUp.head.animated {
