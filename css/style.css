@@ -106,7 +106,9 @@ p {
 }
 
 
-
+.anw {
+    color: #333;
+}
 
 /*---------------------------------------
     General               
@@ -790,7 +792,7 @@ footer .footer-copyright p {
     color: #000;
     border-radius: 2px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 26px;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
     width: 50px;
@@ -966,7 +968,7 @@ footer .footer-copyright p {
 
   h1 {
     font-size: 36px;
-    margin-top: 130px;
+    margin-top: 20px;
   }
 
   #home p,
@@ -1198,7 +1200,7 @@ footer .footer-copyright p {
     font-size: 7rem;
   }
   p.wow.fadeInUp.lr-pd.dahman {
-    margin-bottom: 340px;
+    margin-bottom: 320px;
   }
   #contact .contact-detail {
     height: 378px !important;
@@ -1271,6 +1273,18 @@ footer .footer-copyright p {
   .col-md-12 .col-sm-12 {
     margin-top: 120px;
   }
+}
+
+@media (min-width: 768px){
+  .col-sm-8 {
+    width: 42%;
+}
+}
+
+@media (min-width: 768px){
+  .col-sm-4 {
+    width: 58%;
+}
 }
 
 
