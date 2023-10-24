@@ -154,10 +154,13 @@ a:hover, a:active, a:focus {
 }
 
 /* #portfolio, */
-#cta,
+
 #team, #service
  {
   padding: 100px;
+}
+#cta {
+  padding:100px 0;
 }
 
 #portfolio,
@@ -908,7 +911,7 @@ footer .footer-copyright p {
     font-size: 48px;
   }
 
-  #portfolio,
+  /* #portfolio, */
   #cta,
   #team, #service
    {
@@ -956,9 +959,9 @@ footer .footer-copyright p {
 }
 
 @media (max-width: 650px) {
-  #portfolio{
+  /* #portfolio{
     margin-top: 90px;
-  }
+  } */
  
 }
 
@@ -972,7 +975,7 @@ footer .footer-copyright p {
 
   h1 {
     font-size: 36px;
-    margin-top: 182px;
+    /* margin-top: 182px; */
   }
 
   #home p,
@@ -1006,7 +1009,7 @@ footer .footer-copyright p {
 
 }
 
-@media (min-width:1200px) {
+@media (min-width:1550px) {
   .container {
     width: 1440px !important;
 }
@@ -1193,7 +1196,7 @@ footer .footer-copyright p {
   }
   
   #contact {
-    padding-top: 163px !important;
+    padding-top: 110px !important;
     padding-bottom: 163px !important;
   }
   
@@ -1203,9 +1206,9 @@ footer .footer-copyright p {
     padding-right: 15px;
     font-size: 7rem;
   }
-  p.wow.fadeInUp.lr-pd.dahman {
+  /* p.wow.fadeInUp.lr-pd.dahman {
     margin-bottom: 320px;
-  }
+  } */
   #contact .contact-detail {
     height: 378px !important;
   }
@@ -1277,6 +1280,7 @@ footer .footer-copyright p {
   .col-md-12 .col-sm-12 {
     margin-top: 120px;
   }
+
 }
 
 @media (min-width: 768px){
@@ -1334,7 +1338,7 @@ footer .footer-copyright p {
   line-height: 150%;
 }
 
-.right_icon.djj {
+.right_icon.djj img{
   width: 18px;
   height: 18x;
 }
@@ -1374,4 +1378,18 @@ text-align: center !important;}
     margin-top: 20px;
   }
 }
+.pad {
+  padding: 30px;
+}
+@media (min-width:768px) {
+  section#contact {
+    display: flex;
+    height: calc(100vh - 264px);
+  }
+}
+
+section#home {
+  height: fit-content;
+}
+
   /* #a1c45a */
