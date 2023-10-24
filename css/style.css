@@ -1364,5 +1364,7 @@ text-align: center !important;}
 
   .sd {
     width: 40%;
+    transform: scaleX(-1);
+
   }
   /* #a1c45a */
