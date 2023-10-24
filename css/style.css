@@ -1186,6 +1186,12 @@ footer .footer-copyright p {
 }
 
 @media (min-width:768px) {
+  h1.wow.fadeInUp.head.df.animated.nacer {
+    padding: 0 !important;
+  }
+  .col-md-4s.col-sm-6.omar {
+    width: 100% !important;
+  }
   h1.wow.fadeInUp.head.animated {
     padding-left: 15px;
     padding-right: 15px;
@@ -1237,6 +1243,7 @@ footer .footer-copyright p {
   .col-md-4ff {
     width: 100%;
 }
+
 }
 
 @media (max-width: 350px){
@@ -1377,9 +1384,12 @@ text-align: center !important;}
     font-size: 36px;
     margin-top: 20px;
   }
+  .pad {
+    padding:30px !important; 
+  }
 }
 .pad {
-  padding: 30px;
+  padding: 175px 30px;
 }
 @media (min-width:768px) {
   section#contact {
