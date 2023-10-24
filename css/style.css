@@ -965,7 +965,9 @@ footer .footer-copyright p {
 @media (max-width: 650px) {
 
 
-  /* .sd {} */
+  .sd {
+    width: 60% !important;
+  }
   
 
   h1 {
