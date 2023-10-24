@@ -157,7 +157,7 @@ a:hover, a:active, a:focus {
 #cta,
 #team, #service
  {
-  padding: 100px;
+  padding: 70px 100px;
 }
 
 #portfolio,
@@ -968,7 +968,7 @@ footer .footer-copyright p {
 
   h1 {
     font-size: 36px;
-    margin-top: 20px;
+    margin-top: 130px;
   }
 
   #home p,
