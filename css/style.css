@@ -968,7 +968,7 @@ footer .footer-copyright p {
 @media (max-width: 650px) {
 
 
-  .sd {
+  .ggg {
     width: 60% !important;
   }
   
@@ -1373,9 +1373,9 @@ text-align: center !important;}
   }
 
 
-  .sd {
+  .ggg {
     width: 40%;
-    transform: scaleX(-1);
+    /* transform: scaleX(-1); */
   }
 
   
