@@ -395,7 +395,7 @@ footer {
   text-align: left;
   font-family: "chillax-regular";
   color: #727272;
-  padding-left: 6px;
+  padding-left: 7px;
 }
 
 /* #home img {
@@ -1030,6 +1030,7 @@ footer .footer-link ul li a:hover {
   line-height: 31px;
   letter-spacing: 0px;
   padding-top: 18px;
+  padding-left: 6px;
 }
 }
 
@@ -1633,6 +1634,7 @@ p.wow.fadeInUp.lr-pd.animated {
       color: #ddd;
       font-size: 6rem;
       font-family: 'Chillax-Regular';
+      padding-left: 0px;
     }
   }
 
