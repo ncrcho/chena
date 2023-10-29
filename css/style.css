@@ -395,6 +395,7 @@ footer {
   text-align: left;
   font-family: "chillax-regular";
   color: #727272;
+  padding-left: 6px;
 }
 
 /* #home img {
@@ -1639,6 +1640,7 @@ p.wow.fadeInUp.lr-pd.animated {
     color: #ddd;
     font-family: 'Chillax-Regular';
     font-size: 10rem;
+    padding-left: 0;
   }
   @media (max-width:1550px) {
     .pad {
