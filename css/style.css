@@ -547,7 +547,7 @@ width: 40%;
 -----------------------------------------*/
 
 #about {
-  padding-top: 40px;
+  /* padding-top: 40px; */
   padding-bottom: 0px;
 }
 
@@ -1296,6 +1296,7 @@ footer .footer-link ul li a:hover {
   font-weight: 300;
   line-height: 30px;
   margin: 0;
+  font-family: "chillax-regular";
 }
 
 .box > p {
@@ -1303,7 +1304,7 @@ footer .footer-link ul li a:hover {
   margin: 0 0 2.4rem 0;
   font-weight: 500;
   font-family: 'Chillax-regular';
-  font-size: 16px;
+  font-size: 18px;
   /* letter-spacing: 1px; */
 }
 .box > h2 {
@@ -1339,7 +1340,7 @@ footer .footer-link ul li a:hover {
 
     font-family: 'Chillax-regular';
     font-weight: 400px;
-    font-size: 3vw;
+    font-size: 59px;
     font-weight: 100;
     color: #0e0e0e;
 
@@ -1521,6 +1522,7 @@ footer .footer-link ul li a:hover {
   font-family: "chillax-regular";
   font-size: 20px;
   line-height: 150%;
+  color: #000;
 }
 
 .right_icon.djj img{
@@ -1797,10 +1799,17 @@ p.wow.fadeInUp.lr-pd.animated {
 }
 .about-us- h4 {
   letter-spacing: -1px;
-  font-size: 2.25rem;
+  font-size: 2.6rem;
+}
+.text-about- p {
+  
+  font-size: 1.9rem;
 }
 .box > h2 {
-  font-size: 1.5rem;
+  font-size: 24px;
+}
+.box > p {
+  font-size: 18px;
 }
 }
 @media (max-width:450px) {
@@ -1811,8 +1820,7 @@ p.wow.fadeInUp.lr-pd.animated {
   top: 270px;
 }
 .about-us- {
-  padding: 1.5rem;
-}
+  padding: 4.5rem 1.5rem;}
 .icons- {
   top: 25px;
 }
@@ -1913,3 +1921,41 @@ color: #cacaca; */
   .Upo {
     width: 40%;
   }
+
+  @media (max-width:450px) {
+    #home h1 {
+      font-size: 32px !important;
+    }
+    #home p {
+      font-size: 14px !important;
+      line-height: 18px !important;
+    }
+
+    #portfolio {
+      
+        padding-top: 30px;
+    
+    }
+  }
+
+  @media (max-width:450px) {
+   
+  .about-us- h4 {
+    letter-spacing: -1px;
+    font-size: 2.3rem;
+  }
+  .text-about- p {
+    
+    font-size: 1.6rem;
+  }
+
+}
+
+@media (max-width:450px) {
+.box > h2 {
+  font-size: 22px;
+}
+.box > p {
+  font-size: 16px;
+}
+}
