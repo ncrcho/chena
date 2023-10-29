@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 144.07 122.83" style="enable-background:new 0 0 144.07 122.83;" xml:space="preserve">
+	 viewBox="0 0 249.54 251.57" style="enable-background:new 0 0 249.54 251.57;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#231F20;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#231F20;stroke-width:30;stroke-miterlimit:10;}
+</style>
+<polyline class="st0" points="-733.92,-1476.23 -896.24,-1476.23 -896.24,-1641.42 "/>
+<path class="st1" d="M51.85-1638.54"/>
 <g>
 	<g>
-		<rect y="53.91" width="133.24" height="15"/>
+		<path d="M122.74,251.57c-2.56,0-5.12-0.98-7.07-2.93c-3.9-3.91-3.9-10.24,0-14.14L225.4,124.77L117.7,17.07
+			c-3.91-3.91-3.91-10.24,0-14.14c3.91-3.9,10.24-3.9,14.14,0L246.62,117.7c3.9,3.91,3.9,10.24,0,14.14l-116.8,116.8
+			C127.86,250.6,125.3,251.57,122.74,251.57z"/>
 	</g>
 	<g>
-		<path d="M84.28,122.83l-10.47-10.74l52.01-50.67L73.81,10.74L84.28,0l57.53,56.04c1.45,1.41,2.27,3.35,2.27,5.37
-			s-0.82,3.96-2.27,5.37L84.28,122.83z"/>
+		<path d="M239.54,134.77H10c-5.52,0-10-4.48-10-10s4.48-10,10-10h229.54c5.52,0,10,4.48,10,10S245.07,134.77,239.54,134.77z"/>
 	</g>
 </g>
 </svg>
