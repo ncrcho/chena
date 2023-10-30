@@ -1127,12 +1127,14 @@ footer .footer-link ul li a:hover {
 }
 @media (max-width: 768px){
   #home h1 {
-    font-size: 4rem !important;
+    font-size: 6rem !important;
     
 }
 
 #home p {
-  font-size: 22px;
+  font-size: 29px;
+  line-height: 40px;
+  font-family: "chillax-regular" !important;
 }
 }
 
@@ -1592,12 +1594,15 @@ section#home {
   /* #a1c45a */
   @media (max-width:768px) {
     .hee img {
-      width: 75% !important;
+      width: 100% !important;
       transform: scaleX(-1) translateY(50px) !important;
       margin-bottom: 440px !important;
       float: inherit !important;
       margin-bottom: 0px !important;
       /* margin-bottom: -120px !important; */
+      text-align: center;
+    }
+      
       .hee img {
         transform: scaleX(-1) translate(0px, 400px) !important;
   
@@ -1676,10 +1681,21 @@ p.wow.fadeInUp.lr-pd.animated {
 
   .hee img {
     transform: scaleX(-1) translate(-0px, 400px) !important;
+    text-align: center;
   }
   #home h1 {
     font-size: 1rem;
+    text-align: center;
   }
+
+  #home p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hee {
+    text-align: center;  }
 }
 
 
