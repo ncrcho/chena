@@ -1609,10 +1609,10 @@ section#home {
       }
   }
   h1.wow.fadeInUp.head.animated {
-    text-align: center;
+    /* text-align: center; */
 }
 p.wow.fadeInUp.lr-pd.animated {
-  text-align: center !important;
+  /* text-align: center !important; */
 }
 
 .about-us {
