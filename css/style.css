@@ -425,7 +425,7 @@ footer {
   width: 40%;
   max-width: 100%; /* Ensure the image doesn't exceed its container's width */
   height: auto; /* Maintain the aspect ratio */
-  transform: scaleX(-1) translate(-50px, -110px);
+  transform: scaleX(-1) translate(-80px, -110px);
   float: right;
 }
 width: 40%;
@@ -1009,7 +1009,7 @@ footer .footer-link ul li a:hover {
   font-size: 7rem !important;
 }
 .hee img {
-  transform: scaleX(-1) translate(-50px, 15px) !important;
+  transform: scaleX(-1) translate(-60px, 15px) !important;
 }
 .pad{
   margin-bottom: -325px !important;
@@ -1660,7 +1660,7 @@ p.wow.fadeInUp.lr-pd.animated {
     width: 40%;
     max-width: 100%;
     height: auto;
-    transform: scaleX(-1) translate(-50px, -35px);
+    transform: scaleX(-1) translate(-70px, -35px);
     float: right;
 }
 
@@ -1974,4 +1974,15 @@ color: #cacaca; */
 .box > p {
   font-size: 16px;
 }
+}
+
+
+@media (max-width:450px){
+  .hee img {
+margin-left: 12px !important;  }
+}
+
+@media (max-width:768px){
+  .hee img {
+margin-left: 20px;  }
 }
