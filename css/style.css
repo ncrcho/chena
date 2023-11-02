@@ -1360,7 +1360,7 @@ footer .footer-link ul li a:hover {
 
 @media (max-width: 750px){
 .title h1 {
-    font-size: 4.25rem;
+    font-size: 3rem;
 }
 }
 
@@ -1680,7 +1680,7 @@ p.wow.fadeInUp.lr-pd.animated {
   }
 
   .hee img {
-    transform: scaleX(-1) translate(-0px, 400px) !important;
+    transform: scaleX(-1) translate(-0px, 390px) !important;
     text-align: center;
   }
   #home h1 {
@@ -1940,11 +1940,14 @@ color: #cacaca; */
 
   @media (max-width:450px) {
     #home h1 {
-      font-size: 32px !important;
+      font-size: 38px !important;
+      bottom: 30px;
     }
     #home p {
-      font-size: 14px !important;
-      line-height: 18px !important;
+      font-size: 18px !important;
+      line-height: 28px !important;
+      position: relative;
+      bottom: 40px;
     }
 
     #portfolio {
@@ -1963,6 +1966,7 @@ color: #cacaca; */
   .text-about- p {
     
     font-size: 1.6rem;
+    padding: 0 25px;
   }
 
 }
@@ -1979,10 +1983,25 @@ color: #cacaca; */
 
 @media (max-width:450px){
   .hee img {
-margin-left: 12px !important;  }
+margin-left: 10px !important;  }
 }
 
 @media (max-width:768px){
   .hee img {
-margin-left: 20px;  }
+margin-left: 40px;  }
+
+#contact #home h1 {
+  font-size: 38px !important;
+  bottom: 0px;
+  text-align: left;
 }
+
+#contact #home p {
+  font-size: 18px !important;
+  line-height: 28px !important;
+  position: relative;
+  bottom: 0px;
+  text-align: left;
+}
+}
+
