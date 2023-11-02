@@ -289,7 +289,7 @@ footer {
     color: #cacaca;
     font-size: 13px;
     font-weight: 400;
-    line-height: 50px;
+    line-height: 40px;
     letter-spacing: 1px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
@@ -298,13 +298,14 @@ footer {
     padding: 0px 20px !important;
 }
 
+
 .navbar-default .navbar-nav > li a:hover {
     color: #ccc !important;
     
 }
 
 .navbar-default .navbar-nav .da a:hover {
-  color: #cacaca !important;
+  color: #ffffff !important;
   
 }
 
@@ -534,12 +535,14 @@ width: 40%;
 }
 
 #cta .btn:hover {
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+
 }
 
 .btn:hover {
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #cacaca !important;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
 }
 
 /*---------------------------------------
@@ -1442,13 +1445,13 @@ footer .footer-link ul li a:hover {
   font-weight: 500;
   border-radius: 4px;
   letter-spacing: 1px;
-  padding: 0px 8px;
+  /* padding: 0px 8px; */
   transition: all 0.4s ease-in-out;
   margin-top: 0;
 }
 
 .da:hover {
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   
 }
 
@@ -2005,3 +2008,14 @@ margin-left: 40px;  }
 }
 }
 
+nav navbar-nav navbar-right {
+
+}
+
+@media (min-width:768px) {
+  .navbar-right {
+    float: right!important;
+    /* margin-right: -15px; */
+    margin-top: 5px;
+  }
+}
