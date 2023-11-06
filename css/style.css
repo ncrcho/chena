@@ -1157,8 +1157,8 @@ footer .footer-link ul li a:hover {
 
   #home p,
   #cta p {
-    font-size: 16px !important;
-    line-height: 27px !important;
+    font-size: 2.125rem !important;
+    line-height: 150% !important;
   }
 
   .filter-wrapper {
@@ -1679,11 +1679,11 @@ p.wow.fadeInUp.lr-pd.animated {
 
 @media (max-width: 768px) {
   .pad {
-    margin-bottom: -0px !important;
+    margin-bottom: -70px !important;
   }
 
   .hee img {
-    transform: scaleX(-1) translate(-0px, 390px) !important;
+    transform: scaleX(-1) translate(-0px, 385px) !important;
     text-align: center;
   }
   #home h1 {
@@ -1769,7 +1769,7 @@ p.wow.fadeInUp.lr-pd.animated {
   color: rgba(255,255,255,.6);
   font-size: 1.9rem;
   margin-top: 10px;
-  line-height: 160%;
+  line-height: 150%;
   font-weight: 400;
     font-family: 'Chillax-Regular' !important;
 }
@@ -1833,7 +1833,7 @@ p.wow.fadeInUp.lr-pd.animated {
 }
 @media (max-width:450px) {
   .about-us- img {
-    height: 244px;
+    height: 344px;
 }
 .about-us- h3 {
   top: 270px;
@@ -1947,8 +1947,8 @@ color: #cacaca; */
       bottom: 30px;
     }
     #home p {
-      font-size: 18px !important;
-      line-height: 28px !important;
+      font-size: 2.125rem !important;
+      line-height: 150% !important;
       position: relative;
       bottom: 40px;
     }
@@ -1986,12 +1986,12 @@ color: #cacaca; */
 
 @media (max-width:450px){
   .hee img {
-margin-left: 10px !important;  }
+margin-left: 13px !important;  }
 }
 
 @media (max-width:768px){
   .hee img {
-margin-left: 40px;  }
+margin-left: 20px;  }
 
 #contact #home h1 {
   font-size: 38px !important;
