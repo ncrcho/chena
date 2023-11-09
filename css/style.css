@@ -265,7 +265,7 @@ footer {
 -----------------------------------------*/
 
 .navbar-default {
-    background: #000;
+    background: #100d0d;
     border: none;
     box-shadow: 0px;
     padding: 20px 0px;
@@ -376,7 +376,7 @@ footer {
      align-items: center;
     height: 50vh;
     position: relative;
-    background-color: #000;
+    background-color: #100d0d;
     display: flex;
     /* flex-direction: column;
     justify-content: center;
@@ -1712,7 +1712,7 @@ p.wow.fadeInUp.lr-pd.animated {
 .about-us- {
   padding: 6rem 8rem;
   position: relative;
-  background: #000;
+  background: #100d0d;
   margin: 0 auto;
   border-radius: 10px;
   display: flex;
